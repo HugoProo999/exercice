@@ -1,0 +1,12 @@
+t_moy = [14.9, 13.3, 13.1, 12.5, 13.0, 13.6, 13.7]
+annes = [2013,2014,2015,2016,2017,2018,2019]
+
+def mini(t_moy,annes):
+    Mini = t_moy[0]
+    Date = annes[0]
+    for i in range(len(t_moy)):
+        if i <= Mini:
+            Mini = i
+            Date = annes[i]
+        
+    return Mini, Date
